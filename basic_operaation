@@ -1,0 +1,106 @@
+#字符串和列表的一些操作
+#Python注释
+#单行注释
+'''
+这是单行注释  使用单引号
+'''
+"""
+这是多行注释  使用双引号
+"""
+"""
+在进行Python开发时，需进行编码声明，如采用UTF-8编码，需在源码上方进行 # -*- coding: UTF-8 -*- 声明，
+从Python3开始，Python默认使用UTF-8编码，所以Python3.x的源文件不需要特殊声明UTF-8编码。
+"""
+"""
+多行注释的时候  选中要注释的行数  然后
+"""
+
+"""
+多行注释的时候  选中要注释的行数  然后使用ctl＋/ 进行多行注释   取消的时候使用同样的操作
+"""
+#字符串的三种写法
+message1='这是一个字符串'
+message2="这是一个字符串"
+message3='''这种写法可以换行呦！！！
+这就换行了'''
+print(message1)
+print(message2)
+print(message3)
+
+
+#字符串拼接f
+cars=['BYD','ford','cha','Great Wall']
+message=f"我的第一辆车是{cars[0].title()}"
+#print(message)
+
+
+#for循环
+for i in range(5):
+    s=i**2;
+    t='hello  python  world'
+
+
+#Python数组
+cars=['BYD','ford','cha','Great Wall']
+# print(cars)
+# print(cars[0])
+# print(cars[0].title())
+# print(cars[-1])
+# print(cars[-2])
+# print(cars[-3])
+
+#字符数组操作
+#后面添加元素
+namere=['xhangan','folisi','cha','Great Wall']
+#namere.append('mayun')
+#print(namere)
+
+#使用insert方法插入指定位置
+#namere.insert(0,'yanghe')
+#print(namere)
+
+#从列表中删除元素 指定位置删除  得知道要删除元素的位置
+#del namere[0]
+#print(namere)
+
+#删除一个元素还能进行访问 使用pop()  删除末尾元素还能使用它
+namere1=namere.pop()   #使用namere1接收pop出来的元素
+print(namere)
+print(namere1)
+
+#remove方法  想要删除某个元素之后还可以使用这个元素  就可以先把这个变量赋值给一个变量  再去使用这个变量
+fff='xhangan'
+namere.remove('xhangan')
+print(namere)
+print(fff)
+
+#使用sort进行排序（按照首字母进行排序）大写的排在前面  小写的都排在后面
+cars=['bYD','ford','cha','great Wall']
+#cars.sort()
+print(cars)
+#cars.reverse()
+print(cars)
+#计算元素的个数
+print(len(cars))
+
+#sorted不会改变原始数组的顺序
+print(sorted(cars))
+print(sorted(cars,reverse=True))  #使用reverse将前后进行调换
+print(cars)
+
+#列表循环遍历
+cars=['bYD','ford','cha','great Wall']
+for car in cars:
+    print(car)
+
+
+#for循环中加入一些东西
+for name in cars:
+    print(f"{name.title()},你好  你今年多大了?\n")
+    print("如果有缩进这条语句就会包含到循环当中")
+print("如果没有缩进这条语句就不会包含到循环当中了")
+
+
+info = {'name': 'Alex', 'age': 25, 'sex': 'boy'}
+introducation = f'My name is {info["name"]},I am a {info["sex"]},and I am {info["age"]} years old.'
+#print(introducation)
