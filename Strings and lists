@@ -104,3 +104,6 @@ print("如果没有缩进这条语句就不会包含到循环当中了")
 info = {'name': 'Alex', 'age': 25, 'sex': 'boy'}
 introducation = f'My name is {info["name"]},I am a {info["sex"]},and I am {info["age"]} years old.'
 #print(introducation)
+
+
+
