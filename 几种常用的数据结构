@@ -1,0 +1,107 @@
+mytuple=("great wall","banana","cherry")
+print(mytuple)
+
+(green,yello,red)=mytuple
+print(green)
+print(yello)
+print(red)
+
+#数据类型set（集合）      undoerored   nofuplicate
+myset={"apple","banana","cherry"}  #圆括号
+yourset={"亲爱的","小芒果","我爱你"}
+set3=myset.union(yourset)
+print(set3)
+print(myset)
+print("apple" in myset)  #判断中是否有某一个元素  返回一个bool值
+for x in myset:
+    print(x)
+myset.add("orange")
+print(myset)
+print("orange" in myset)
+
+#数据类型dictionary（字典）  顺序  不重复   key and value
+mydiction={
+    "张三":10,
+    "李四":20,
+    "王五":30
+}
+keys=mydiction.keys()
+values=mydiction.values()
+mydiction["color"]="red"#第一个更新key和value的方法
+print(keys)
+print(values)
+mydiction.update({"year":2021})#第2个更新key和value的方法
+print(keys)
+print(values)
+#######pop方法
+mydiction.pop("color")
+print(keys)
+print(values)
+#clear 和delete的区别
+#clear只会清空对象的内容   不会删除对象  对象还可以进行访问  delete就是删掉对象  对象不能
+#再进行访问
+# mydiction.clear()
+print(keys)
+print(values)
+# mydiction.delete()
+# print(keys)
+for x in mydiction.keys():
+    print(x)
+
+for x in mydiction.values():
+    print(x)
+
+for x ,y in mydiction.items():
+    print(x,y)
+
+#copy of  a dictionary
+print(id(mydiction))
+dics=dict(mydiction)
+print(dics)
+print(id(dics))
+mydic1=dics.copy()
+print(mydic1)
+print(id(mydic1))
+mydic2=mydic1   #mydic1和mydic2指向同一片内存
+# print(mydic2)
+print(id(mydic2))
+
+#根据条件进行排序
+def myfunc(s):
+    return  s["year"]
+mydiction3=[
+    {"张三":10,"year":22},
+    {"李四":20,"year":26},
+    {"王五":30,"year":24}
+]
+mydiction3.sort(key=myfunc)
+print(mydiction3)
+#计算某个成员的个数
+points=[1,2,3,4,5,5,5,5]
+print(points.count(5))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
