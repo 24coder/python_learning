@@ -105,5 +105,15 @@ info = {'name': 'Alex', 'age': 25, 'sex': 'boy'}
 introducation = f'My name is {info["name"]},I am a {info["sex"]},and I am {info["age"]} years old.'
 #print(introducation)
 
-
+#二维列表创建及访问和c差不多   以及引入numpy进行二维数组的切片操作
+list=[[1,2,3],[4,5,6],[7,8,9]]
+numlist=ny.array(list)
+new=numlist[0,:]
+new2=numlist[1,:]
+new3=numlist[:,0]
+print(numlist[0,:])
+print(new)
+print(new2)
+print(new3)
+print(list[1][2])
 
