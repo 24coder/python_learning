@@ -123,3 +123,12 @@ li_matrix=ny.matrix(list)
 print(li_matrix)
 print(li_matrix*li_matrix)   #矩阵的相乘
 # print(list*list)
+
+#两种矩阵的转置
+print(li_matrix.T)   #只能用于二维及二维以下的转置
+print(li_matrix.transpose())  #可以用于三维及三维以上的转置
+
+
+
+
+
