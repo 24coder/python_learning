@@ -117,3 +117,9 @@ print(new2)
 print(new3)
 print(list[1][2])
 
+
+#将二维列表转换为矩阵
+li_matrix=ny.matrix(list)
+print(li_matrix)
+print(li_matrix*li_matrix)   #矩阵的相乘
+# print(list*list)
